@@ -1,4 +1,3 @@
-/*
 Egzersiz #1 
 
 Bu alıştırmada favori yemek tarifiniz için bir HTML sayfası oluşturacaksınız.
@@ -60,6 +59,8 @@ Kalori: çok
 yağ: çok
 eğlence: çok
 
-*/
+## Ödevin Tamamlanmış Hali
+
+![View](view.png)
 
       
