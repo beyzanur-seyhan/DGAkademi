@@ -6,7 +6,7 @@ Bu ödevde <b>Css Combinators</b> konusunda yer alan alt başlıkların farklar�
 
 ## Ele Aldığım Başlıklar:
 
-- Descendamt selector
+- Descendant selector
 - Child selector (>)
 - Adjacent sibling selector (+)
 - General sibling selector (~)
