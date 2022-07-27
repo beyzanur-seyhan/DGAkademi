@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>CSS Combinators</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>CSS Combinators</h1>
+
+    <h2>Descendant Selector</h2>
+    <p>
+        Ata elementin içindeki belirtilen bütün çocuk elementleri seçer. Burada
+        ata element önemlidir.
+    </p>
+
+    <div class="descendat-selector">
+        ATA ELEMENT (descendat-selector)
+        <p>Çocuk elementler</p>
+        <p>İkinci p öğesi</p>
+        <p>Üçüncü p öğesi</p>
+        <p>Dördüncü p öğesi</p>
+        <p>Beşinci p öğesi</p>
+
+        <section style="background-color: antiquewhite; padding: 15px;">
+            SECTION
+            <p>
+                Section içerisindeki bir <b>p</b> elementiyim. Ama hala maviyim. Çünkü ata kapsayıcım
+                "descendat-selector"
+            </p>
+        </section>
+    </div>
+
+    <h2>Child Selector (>)</h2>
+    <p>
+        Sadece belirtilen ebeveyne ait olan çocuk elementleri seçer. Burada parent
+        element önemli.
+    </p>
+    <div class="child-selector">
+        <span style="color: white; text-align: center; display: block;">PARENT ELEMENT (child-selector)</span>
+        <p>İlk çocuk element (p)</p>
+        <p>İkinci çocuk elementi (p)</p>
+
+        <section style="background-color: magenta; padding: 15px;">
+            SECTION
+            <p style="background-color: white;">
+                Ben section içerisinde bir <b>p</b> elementiyim. Benim şu anki parent elementim
+                <b>section</b>.
+            </p>
+        </section>
+    </div>
+
+    <h2>Adjacent Sibling Selector (+)</h2>
+    <p>Kendisinden hemen sonra gelen ilk elementi seçer.</p>
+    <div class="first-elem">Ben ilk Elementim (.first-elem)</div>
+    +
+    <span>Ben div'den hemen sonra gelen <b>span</b>'ım </span>
+
+    <h2>General Sibling Selector (~)</h2>
+    <p>Kendisinden sonra gelen belirtilmiş bütün elementleri seçer.</p>
+    <h4 class="general-select">.general-select ~ div*10</h4>
+    <div>Ben ilk div'im</div>
+    <div>Ben ikinci div'im</div>
+    <div>Ben üçüncü div'im</div>
+    <div>Ben dördüncü div'im</div>
+    <div>Ben beşinci div'im</div>
+    <div>Ben altıncı div'im</div>
+    <div>Ben yedinci div'im</div>
+    <div>Ben sekizinci div'im</div>
+    <div>Ben dokuzuncu div'im</div>
+    <div>Ben onuncu div'im</div>
+</body>
+
+</html>
