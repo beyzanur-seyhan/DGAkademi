@@ -10,12 +10,10 @@ function DoLoginSystem(){
 }
 
 function ValidateUserLogin(){
-
-    let userName = document.getElementById("userName");
-
-    let password = document.getElementById("password");
-
+    
     let result;
+    let userName = document.getElementById("userName");
+    let password = document.getElementById("password");
 
     userName.value === user.name && password.value === user.password ? result = true : result = false
 
