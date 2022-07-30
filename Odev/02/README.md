@@ -3,7 +3,7 @@
 Bu ödevde ternary operatorü ile ilgili bir örnek yapmamız istendi. 
 Bununla ilgili küçük bir login örneği yaptım.
 
-![View](view.gif)
+![View](https://raw.githubusercontent.com/beyzanur-seyhan/DGAkademi/main/Odev/02/view.gif?token=GHSAT0AAAAAABUZ4372ZLMH2XZXBU5FB3CAYXFMV3A)
 
 ## Nasıl Çalışıyor?
 Login butonuna tıklanıldığında input alanlarına girilen bilgilerin sistemde kayıtlı bilgi ile uyuşup uyuşmadığını kontorol eden bir mekanizma mevcut. 
