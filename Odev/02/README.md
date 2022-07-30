@@ -3,7 +3,7 @@
 Bu ödevde ternary operatorü ile ilgili bir örnek yapmamız istendi. 
 Bununla ilgili küçük bir login örneği yaptım.
 
-![View](https://raw.githubusercontent.com/beyzanur-seyhan/DGAkademi/main/Odev/02/view.gif?token=GHSAT0AAAAAABUZ4372ZLMH2XZXBU5FB3CAYXFMV3A)
+![View](views/view.jpg)
 
 ## Nasıl Çalışıyor?
 Login butonuna tıklanıldığında input alanlarına girilen bilgilerin sistemde kayıtlı bilgi ile uyuşup uyuşmadığını kontorol eden bir mekanizma mevcut. 
@@ -16,4 +16,25 @@ const user = {
 };
 ```
 
-Eğer girilen isim ve şifre bilgisi uyuşuyorsa ekranda "Giriş Başarılı!" şeklinde bir uyarı penceresi görürüz. Eğer tam tersi ise "Giriş Başarısız!" şeklinde bir ifade görürüz.
+Eğer girilen isim ve şifre bilgisi uyuşuyorsa ekranda "Giriş Başarılı!" şeklinde bir uyarı penceresi görürüz. 
+
+![Successful Login](views/successful.jpg)
+
+
+Eğer tam tersi ise "Giriş Başarısız!" şeklinde bir ifade görürüz.
+
+![Unsuccessful Login](views/unSuccessful.jpg)
+
+Ternary operator'ünü iki yerde kullandım:
+
+1- Input alanına girilen bilgilerin uyuşup uyuşmadığını kontrol ederken;
+    
+```
+userName.value === user.name && password.value === user.password ? result = true : result = false
+```
+
+2- Login butonuna bastığımda ilk kontrolden geriye dönen değeri alıp true ya da false olma durumuna göre;
+
+```
+ValidateUserLogin() ? alert("Giriş Başarılı!") : alert("Giriş Başarısız!")
+```
