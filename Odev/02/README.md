@@ -3,7 +3,7 @@
 Bu ödevde ternary operatorü ile ilgili bir örnek yapmamız istendi. 
 Bununla ilgili küçük bir login örneği yaptım.
 
-![view](view.gif)
+<img src="view.gif"></img>
 
 ## Nasıl Çalışıyor?
 Login butonuna tıklanıldığında input alanlarına girilen bilgilerin sistemde kayıtlı bilgi ile uyuşup uyuşmadığını kontorol eden bir mekanizma mevcut. 
