@@ -1,0 +1,26 @@
+@import "headers";
+@import "../abstracts/mixins";
+@import "../components/film";
+
+.main {
+    // height: $size-302px + 316;
+    overflow: auto;
+    padding: 0 24px;
+    background-color: $color-white;
+
+    @include xl{
+        @include flex(space-between, flex-start, row, wrap);
+        width: 1134px;
+        height: 770px;
+        padding: 24px 50px;
+        border-radius: 10px;
+    }
+
+    .header {
+        @extend header;
+    }
+
+    section {
+       @extend film;
+    }
+}

@@ -1,0 +1,27 @@
+/**************** Base ****************/
+@import "base/typography";
+@import "base/reset";
+
+/**************** Pages ****************/
+ @import "pages/detail-movie";
+
+/**************** Layout ****************/
+@import "layout/navbar";
+@import "layout/main";
+@import "layout/article";
+@import "layout/footer";
+
+/**************** Components ****************/
+@import "components/category";
+@import "components/film";
+@import "components/rating";
+@import "components/see-more";
+
+/**************** Abstracts ****************/
+@import "abstracts/variable";
+@import "abstracts/mixins";
+
+body {
+    background-color: $color-white;
+}
+

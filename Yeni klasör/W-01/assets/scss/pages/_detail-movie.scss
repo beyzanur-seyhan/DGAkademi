@@ -1,0 +1,147 @@
+@import "../abstracts/mixins";
+
+.detail-movie {
+    @include xl {
+        width: 100%;
+        // padding-top: 32px;
+    }
+    .nav {
+        @include xl {
+            width: 62%;
+            // margin-top: 20px;
+            // margin-bottom: 20px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        .logo {
+            @include xs {
+                display: none;
+            }
+        }
+
+        .icon-notif {
+            @include xs {
+                display: none;
+            }
+        }
+    }
+
+    .main {
+        @include xl {
+            margin: auto;
+        }
+
+        &-head {
+            @include xl {
+                width: 100%;
+            }
+
+            .film-title {
+                @include xl {
+                    display: flex;
+                    gap: 30px;
+                    position: relative;
+                    margin-bottom: 22px;
+                }
+
+                a {
+                    @include xl {
+                        position: absolute;
+                        right: 0;
+                    }
+
+                    img {
+                        @include xl {
+                            width: 18px;
+                            height: 24px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .description {
+            @include xl {
+                margin-top: -30px;
+                margin-bottom: 26px;
+            }
+        }
+
+        .cast {
+            @include xl {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.film-info {
+    @include flex(flex-start, center, row, nowrap, ($size-12px + 52));
+    margin-bottom: $margin-bottom-30px;
+
+    dl {
+        font: {
+            size: $size-12px;
+            family: "Mulish", sans-serif;
+        }
+
+        dt {
+            font-weight: ($size-700) - 300;
+            margin-bottom: 6px;
+            color: $color-darker-gray;
+        }
+
+        dd {
+            font-weight: ($size-700) - 100;
+        }
+    }
+}
+
+.description {
+    margin-bottom: ($margin-bottom-30px) - 2;
+
+    @include xl {
+        margin-bottom: 0;
+    }
+
+    p {
+        line-height: $size-12px + 10;
+        letter-spacing: 0.02em;
+        color: $color-darker-gray;
+        margin-top: ($margin-top-16px) - 2;
+
+        font: {
+            family: 'Mulish';
+            weight: ($size-700) - 300;
+            size: $size-12px;
+        }
+    }
+}
+
+.cast-actors {
+    .cast-actor.mobile ~ .cast-actor.desktop {
+        @include xs {
+            display: none;
+        }
+    }
+
+    @include flex(flex-start, flex-start, row, wrap, $size-12px);
+    color: $color-darker-blue;
+
+    font: {
+        size: $size-12px;
+        family: "Mulish", sans-serif;
+        weight: ($size-700) - 300;
+    }
+
+    img {
+        border-radius: ($size-12px) - 7;
+    }
+
+    figcaption {
+        margin-top: 2.8px;
+        display: block;
+        width: $size-12px * 6;
+    }
+}

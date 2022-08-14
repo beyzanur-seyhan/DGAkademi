@@ -1,0 +1,17 @@
+@import "headers";
+@import "../abstracts/mixins";
+@import "../components/film";
+
+.main {
+    overflow: scroll;
+    padding: 0 24px;
+    background-color: $color-white;
+
+    .header {
+        @extend header;
+    }
+
+    section {
+       @extend film;
+    }
+}

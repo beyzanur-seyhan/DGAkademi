@@ -1,0 +1,36 @@
+@import "../abstracts/mixins";
+@import "../abstracts/variable";
+
+.nav {
+    top: 0;
+    position: sticky;
+    padding: 0 24px;
+    margin-top: $size-12px+8;
+    margin-bottom: $size-12px+8;
+    @include flex(space-between, center, row, nowrap);
+    height: $size-12px + 48;
+    background-color: $color-white;
+
+        a,
+        .logo {
+            font: {
+                size: $size-12px + 4;
+                family: "Merriweather";
+            }
+            color: $color-darker-blue;
+        }
+
+        .icon-right {
+            display: flex;
+            align-items: center;
+            gap: 22px;
+        }
+}
+
+.detail-movie {
+    .nav {
+        margin: 0;
+        background-color: transparent;
+        position: static;
+    }
+}

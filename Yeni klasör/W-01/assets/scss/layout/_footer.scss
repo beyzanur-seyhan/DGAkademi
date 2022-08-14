@@ -1,0 +1,32 @@
+@import "../abstracts/mixins";
+
+@include xs{
+    footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background-color: white;
+        box-shadow: 0px 0px 8px rgba($color-dark-blue, 0.08);
+    
+        .bottom-navbar {
+            @include flex(space-between, center, row, nowrap);
+            height: $size-12px * 5;
+            padding: 18px 56px;
+        }
+    
+        .home-indicator {
+            height: $size-12px + 22;
+            text-align: center;
+            padding: 16px; //buraya bak
+            margin-top: 11px;
+            padding-top: 8px;
+        }
+    }
+}
+
+@include xl{
+    footer {
+        display: none;
+    }
+}
+
