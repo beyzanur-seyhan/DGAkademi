@@ -1,0 +1,118 @@
+.w-28 {
+    width: $size-28;
+}
+
+.h-28 {
+    height: $size-28;
+}
+
+.txt-shadow-black {
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+}
+
+.flex-shrink-0 {
+    flex-shrink: 0;
+}
+
+.icon {
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.icon-logo {
+    width: 29.73px;
+    height: 34.09px;
+    background-image: url("../img/logo/dgakademi.svg");
+}
+
+.icon-hamburger-menu {
+    width: 26.25px;
+    height: 18.14px;
+    background-image: url("../img/icon/menu/hamburger-menu.svg");
+}
+
+.icon-home {
+    background-image: url("../img/icon/menu/home.svg");
+}
+
+.icon-envelope {
+    background-image: url("../img/icon/menu/envelope.svg");
+}
+
+.icon-chats-circle {
+    background-image: url("../img/icon/menu/chats-circle.svg");
+}
+
+.icon-card-holder {
+    background-image: url("../img/icon/menu/card-holder.svg");
+}
+
+.icon-chart-pie {
+    background-image: url("../img/icon/menu/chart-pie.svg");
+}
+
+.icon-star-four {
+    background-image: url("../img/icon/menu/star-four.svg");
+}
+
+.icon-user-circle {
+    background-image: url("../img/icon/menu/user-circle.svg");
+}
+
+.icon-settings {
+    background-image: url("../img/icon/menu/settings.svg");
+}
+
+.icon-contactless-payment {
+    width: 23.04px;
+    height: 23.04px;
+    background-image: url("../img/icon/card/contactless-payment.svg");
+}
+
+.icon-armchair {
+    background-image: url("../img/icon/upcoming-payments/armchair.svg");
+}
+
+.icon-coins {
+    background-image: url("../img/icon/upcoming-payments/coins.svg");
+}
+
+.icon-more {
+    background-image: url("../img/icon/others/more.svg");
+}
+
+.icon-train-simple {
+    background-image: url("../img/icon/recent-transactions/train-simple.svg");
+}
+
+.icon-airplane {
+    background-image: url("../img/icon/recent-transactions/airplane.svg");
+}
+
+.icon-gas-pump {
+    background-image: url("../img/icon/recent-transactions/gas-pump.svg");
+}
+
+.icon-barbell {
+    background-image: url("../img/icon/recent-transactions/barbell.svg");
+}
+
+.icon-taxi {
+    width: 43px;
+    height: 43px;
+    background-image: url("../img/icon/recent-transactions/taxi.svg");
+}
+
+.icon-notification {
+    width: 24px;
+    height: 24px;
+    background-image: url("../img/icon/menu/notification.svg");
+}
+
+.icon-visa {
+    width: 39.88px;
+    height: 12.88px;
+    background-image: url("../img/icon/others/visa.svg");
+}

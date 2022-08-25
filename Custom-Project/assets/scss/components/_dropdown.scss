@@ -1,0 +1,13 @@
+.dropdown {
+    font: {
+        size: 12px;
+        weight: 500;
+    }
+    padding: 8px 10px 4px 10px;
+    border: 1px solid #10335b4d;
+    border-radius: 8px;
+    background-image: url("../img/icon/others/arrow-down.svg");
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: calc(100% - 10px);
+}

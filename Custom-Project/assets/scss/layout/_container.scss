@@ -1,0 +1,4 @@
+.container {
+    background-color: $secondary-color;
+    @include grid(63px auto, 100%, 20px);
+}

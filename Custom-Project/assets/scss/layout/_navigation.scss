@@ -1,0 +1,79 @@
+.nav {
+    position: sticky;
+    z-index: 1;
+    top: -1px;
+    height: 363px;
+
+    input[class="i-search"], div.header-right {
+        display: none;
+    }
+
+    input[type="checkbox"] {
+        cursor: pointer;
+        appearance: none;
+        position: absolute;
+        right: 23px;
+        top: 39px;
+    }
+    
+    input[type="checkbox"]:checked {
+        background-image: url("../img/icon/menu/cancel.svg");
+    
+        & ~ div.menu-content {
+            position: absolute;
+            z-index: -1;
+            bottom: 0;
+            width: 100%;
+            display: block;
+            padding: $p-20;
+            background-color: $secondary-color;
+            border-radius: 0px 0px 20px 20px;
+            filter: drop-shadow(0px 6px 8px rgba(0, 0, 0, 0.2));
+        }
+    
+        & + lang.language {
+            @include flex(null, center, null, null);
+        }
+    }
+
+    lang.language {
+        display: none;
+        position: absolute;
+        top: 36px;
+        left: 205px;
+        width: 20px;
+        height: 19px;
+        font: {
+            size: 16px;
+            weight: 500;
+        }
+    }
+    
+    div.menu-content {
+        display: none;
+
+        ul.nav-menu-links {
+            width: 129px;
+            height: 268px;
+            @include flex(null, null, column, 1.2rem);
+        
+            li {
+                height: 28px;
+        
+                a {
+                    font: {
+                        size: 14px;
+                        weight: 600;
+                    }
+        
+                    @include flex(null, center, row, 19px);
+                }
+            }
+        }
+    }    
+}
+
+.side-nav {
+    display: none;
+}
+

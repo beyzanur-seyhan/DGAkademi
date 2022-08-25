@@ -1,0 +1,151 @@
+.section-content {
+    background-color: #FFF;
+    padding: $p-20 23px;
+    border-radius: 8px 8px 0px 0px;
+    @include grid(auto, 100%);
+
+    &-left {
+        .section-credit-card {
+            padding: ($p-20 + 3) 14px 25.6px 14px;
+    
+            figure.credit-card {
+                position: relative;
+                max-width: 314px;
+                height: 202px;
+                border-radius: 24px;
+                background-image: url("../img/backdrop/card.svg");
+                background-position: top;
+                background-repeat: no-repeat;
+                background-size: cover;
+                padding: 25px 17px 30px 27px;
+    
+                div.chip {
+                    position: relative;
+                    @include flex(space-between, null, null, null);
+    
+                    figure.vector-card-reader {
+                        width: 24px;
+                        height: 32px;
+                    }
+    
+                    svg.icon-contactless-position {
+                        position: absolute;
+                        top: -8px;
+                        right: 0;
+                    }
+                }
+    
+                div.card-number {
+                    color: #FFF;
+                    word-break: break-all;
+                    padding-top: 53px;
+    
+                    font: {
+                        size: 15.3575px;
+                        weight: 500;
+                    }
+                }
+    
+                div.card-holder {
+                    position: absolute;
+                    top: 74.59%;
+                    bottom: 22.13%;
+                    font-weight: 600;
+                    color: #FFF;
+    
+                    span {
+                        display: block;
+    
+                        &:nth-child(1) {
+                            font-size: 6.05437px;
+                        }
+    
+                        &:nth-child(2) {
+                            font-size: 12.1087px;
+                        }
+                    }
+                }
+    
+                figure.vector-master {
+                    width: 39.83px;
+                    height: 24.55px;
+                    position: absolute;
+                    top: 156px;
+                    right: 14px;
+                }
+            }
+        }
+    
+        .section-payments {
+            padding-bottom: $p-20 + 1.1;
+        }
+    
+        .section-transactions {
+            padding-bottom: 21px;
+    
+            table {
+                display: block;
+                border: 1px solid #FFF;
+                border-collapse: collapse;
+    
+                caption.header {
+                    display: block;
+
+                    .dropdown-sort-by {
+                        display: none;
+                    }
+                }
+                tbody.transactions {
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                    -webkit-box-direction: normal;
+                    padding-top: 5px;
+    
+                    tr {
+                        border: 1px solid #2e335b33;
+                        border-top: none;
+                        border-right: none;
+                        border-left: none;
+
+                        .desk {
+                            display: none;
+                        }
+    
+                        td:first-child {
+                            padding: 21px 0;
+                            @include flex(null, null, null, 36px);
+                            
+                            svg {
+                                flex-shrink: 0;
+                            }
+    
+                            h3.title-info {
+                                margin-bottom: -5px;
+                            }
+    
+                            time.title-sub {
+                                font-size: 12px;
+                            }
+                        }
+    
+                        td.transaction-total {
+                            padding-bottom: 30px;
+                            font: {
+                                size: 14px;
+                                weight: 700;
+                            };
+                        }
+                    }
+                    
+                    tr:last-child {
+                        border-bottom: none;
+                    }
+                }
+            }
+        }
+    }
+
+    &-right {
+        display: none;
+    }
+}

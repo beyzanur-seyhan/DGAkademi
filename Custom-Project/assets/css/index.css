@@ -1,0 +1,1129 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&display=swap");
+
+.w-28 {
+    width: 28px
+}
+
+.h-28 {
+    height: 28px
+}
+
+.txt-shadow-black {
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25)
+}
+
+.flex-shrink-0 {
+    -ms-flex-negative: 0;
+    flex-shrink: 0
+}
+
+.icon {
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain
+}
+
+.icon-logo {
+    width: 29.73px;
+    height: 34.09px;
+    background-image: url("../img/logo/dgakademi.svg")
+}
+
+.icon-hamburger-menu {
+    width: 26.25px;
+    height: 18.14px;
+    background-image: url("../img/icon/menu/hamburger-menu.svg")
+}
+
+.icon-home {
+    background-image: url("../img/icon/menu/home.svg")
+}
+
+.icon-envelope {
+    background-image: url("../img/icon/menu/envelope.svg")
+}
+
+.icon-chats-circle {
+    background-image: url("../img/icon/menu/chats-circle.svg")
+}
+
+.icon-card-holder {
+    background-image: url("../img/icon/menu/card-holder.svg")
+}
+
+.icon-chart-pie {
+    background-image: url("../img/icon/menu/chart-pie.svg")
+}
+
+.icon-star-four {
+    background-image: url("../img/icon/menu/star-four.svg")
+}
+
+.icon-user-circle {
+    background-image: url("../img/icon/menu/user-circle.svg")
+}
+
+.icon-settings {
+    background-image: url("../img/icon/menu/settings.svg")
+}
+
+.icon-contactless-payment {
+    width: 23.04px;
+    height: 23.04px;
+    background-image: url("../img/icon/card/contactless-payment.svg")
+}
+
+.icon-armchair {
+    background-image: url("../img/icon/upcoming-payments/armchair.svg")
+}
+
+.icon-coins {
+    background-image: url("../img/icon/upcoming-payments/coins.svg")
+}
+
+.icon-more {
+    background-image: url("../img/icon/others/more.svg")
+}
+
+.icon-train-simple {
+    background-image: url("../img/icon/recent-transactions/train-simple.svg")
+}
+
+.icon-airplane {
+    background-image: url("../img/icon/recent-transactions/airplane.svg")
+}
+
+.icon-gas-pump {
+    background-image: url("../img/icon/recent-transactions/gas-pump.svg")
+}
+
+.icon-barbell {
+    background-image: url("../img/icon/recent-transactions/barbell.svg")
+}
+
+.icon-taxi {
+    width: 43px;
+    height: 43px;
+    background-image: url("../img/icon/recent-transactions/taxi.svg")
+}
+
+.icon-notification {
+    width: 24px;
+    height: 24px;
+    background-image: url("../img/icon/menu/notification.svg")
+}
+
+.icon-visa {
+    width: 39.88px;
+    height: 12.88px;
+    background-image: url("../img/icon/others/visa.svg")
+}
+
+body {
+    background-color: #EEEDEB
+}
+
+h3.title-info {
+    font-weight: 700
+}
+
+.title-sub {
+    opacity: 0.5;
+    font-weight: 500
+}
+
+* {
+    text-align: initial
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif
+}
+
+body {
+    color: #2E335B
+}
+
+h1,
+h2,
+h5,
+h6 {
+    font-size: 20px
+}
+
+h3 {
+    font-size: 14px
+}
+
+ul {
+    list-style: none
+}
+
+a {
+    text-decoration: none;
+    color: #2E335B
+}
+
+img,
+figure {
+    width: 100%;
+    height: auto
+}
+
+svg {
+    -ms-flex-negative: 0;
+    flex-shrink: 0
+}
+
+.dropdown {
+    font-size: 12px;
+    font-weight: 500;
+    padding: 8px 10px 4px 10px;
+    border: 1px solid #10335b4d;
+    border-radius: 8px;
+    background-image: url("../img/icon/others/arrow-down.svg");
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: calc(100% - 10px)
+}
+
+.container {
+    background-color: #EEEDEB;
+    display: -ms-grid;
+    display: grid;
+    grid-gap: 20px;
+    -ms-grid-columns: 100%;
+    grid-template-columns: 100%;
+    -ms-grid-rows: 63px auto;
+    grid-template-rows: 63px auto
+}
+
+.nav {
+    position: -webkit-sticky;
+    position: sticky;
+    z-index: 1;
+    top: -1px;
+    height: 363px
+}
+
+.nav input[class="i-search"],
+.nav div.header-right {
+    display: none
+}
+
+.nav input[type="checkbox"] {
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    position: absolute;
+    right: 23px;
+    top: 39px
+}
+
+.nav input[type="checkbox"]:checked {
+    background-image: url("../img/icon/menu/cancel.svg")
+}
+
+.nav input[type="checkbox"]:checked~div.menu-content {
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    width: 100%;
+    display: block;
+    padding: 20px;
+    background-color: #EEEDEB;
+    border-radius: 0px 0px 20px 20px;
+    -webkit-filter: drop-shadow(0px 6px 8px rgba(0, 0, 0, 0.2));
+    filter: drop-shadow(0px 6px 8px rgba(0, 0, 0, 0.2))
+}
+
+.nav input[type="checkbox"]:checked+lang.language {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.nav lang.language {
+    display: none;
+    position: absolute;
+    top: 36px;
+    left: 205px;
+    width: 20px;
+    height: 19px;
+    font-size: 16px;
+    font-weight: 500
+}
+
+.nav div.menu-content {
+    display: none
+}
+
+.nav div.menu-content ul.nav-menu-links {
+    width: 129px;
+    height: 268px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 1.2rem
+}
+
+.nav div.menu-content ul.nav-menu-links li {
+    height: 28px
+}
+
+.nav div.menu-content ul.nav-menu-links li a {
+    font-size: 14px;
+    font-weight: 600;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    gap: 19px
+}
+
+.side-nav {
+    display: none
+}
+
+.main {
+    padding: 0 20px 0 20px
+}
+
+header.nav-menu-toggle {
+    height: 63px;
+    padding: 25px 20px 4px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    background-color: #EEEDEB
+}
+
+header.nav-menu-toggle a.logo {
+    font-size: 20px;
+    font-weight: 800;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    gap: 10px
+}
+
+.header h1,
+.header h2 {
+    font-weight: 700
+}
+
+article.payment header.title {
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1
+}
+
+article.payment header.title h4.title-sub {
+    min-width: 104%;
+    font-size: 10px
+}
+
+.section-content {
+    background-color: #FFF;
+    padding: 20px 23px;
+    border-radius: 8px 8px 0px 0px;
+    display: -ms-grid;
+    display: grid;
+    grid-gap: 0px;
+    -ms-grid-columns: 100%;
+    grid-template-columns: 100%;
+    -ms-grid-rows: auto;
+    grid-template-rows: auto
+}
+
+.section-content-left .section-credit-card {
+    padding: 23px 14px 25.6px 14px
+}
+
+.section-content-left .section-credit-card figure.credit-card {
+    position: relative;
+    max-width: 314px;
+    height: 202px;
+    border-radius: 24px;
+    background-image: url("../img/backdrop/card.svg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 25px 17px 30px 27px
+}
+
+.section-content-left .section-credit-card figure.credit-card div.chip {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between
+}
+
+.section-content-left .section-credit-card figure.credit-card div.chip figure.vector-card-reader {
+    width: 24px;
+    height: 32px
+}
+
+.section-content-left .section-credit-card figure.credit-card div.chip svg.icon-contactless-position {
+    position: absolute;
+    top: -8px;
+    right: 0
+}
+
+.section-content-left .section-credit-card figure.credit-card div.card-number {
+    color: #FFF;
+    word-break: break-all;
+    padding-top: 53px;
+    font-size: 15.3575px;
+    font-weight: 500
+}
+
+.section-content-left .section-credit-card figure.credit-card div.card-holder {
+    position: absolute;
+    top: 74.59%;
+    bottom: 22.13%;
+    font-weight: 600;
+    color: #FFF
+}
+
+.section-content-left .section-credit-card figure.credit-card div.card-holder span {
+    display: block
+}
+
+.section-content-left .section-credit-card figure.credit-card div.card-holder span:nth-child(1) {
+    font-size: 6.05437px
+}
+
+.section-content-left .section-credit-card figure.credit-card div.card-holder span:nth-child(2) {
+    font-size: 12.1087px
+}
+
+.section-content-left .section-credit-card figure.credit-card figure.vector-master {
+    width: 39.83px;
+    height: 24.55px;
+    position: absolute;
+    top: 156px;
+    right: 14px
+}
+
+.section-content-left .section-payments {
+    padding-bottom: 21.1px
+}
+
+.section-content-left .section-transactions {
+    padding-bottom: 21px
+}
+
+.section-content-left .section-transactions table {
+    display: block;
+    border: 1px solid #FFF;
+    border-collapse: collapse
+}
+
+.section-content-left .section-transactions table caption.header {
+    display: block
+}
+
+.section-content-left .section-transactions table caption.header .dropdown-sort-by {
+    display: none
+}
+
+.section-content-left .section-transactions table tbody.transactions {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    padding-top: 5px
+}
+
+.section-content-left .section-transactions table tbody.transactions tr {
+    border: 1px solid #2e335b33;
+    border-top: none;
+    border-right: none;
+    border-left: none
+}
+
+.section-content-left .section-transactions table tbody.transactions tr .desk {
+    display: none
+}
+
+.section-content-left .section-transactions table tbody.transactions tr td:first-child {
+    padding: 21px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 36px
+}
+
+.section-content-left .section-transactions table tbody.transactions tr td:first-child svg {
+    -ms-flex-negative: 0;
+    flex-shrink: 0
+}
+
+.section-content-left .section-transactions table tbody.transactions tr td:first-child h3.title-info {
+    margin-bottom: -5px
+}
+
+.section-content-left .section-transactions table tbody.transactions tr td:first-child time.title-sub {
+    font-size: 12px
+}
+
+.section-content-left .section-transactions table tbody.transactions tr td.transaction-total {
+    padding-bottom: 30px;
+    font-size: 14px;
+    font-weight: 700
+}
+
+.section-content-left .section-transactions table tbody.transactions tr:last-child {
+    border-bottom: none
+}
+
+.section-content-right {
+    display: none
+}
+
+article.payments-content {
+    padding-top: 18px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 2rem
+}
+
+article.payments-content article.payment {
+    width: min(42.691%, 146px);
+    height: 182px;
+    border-radius: 24px;
+    padding: min(7.02%, 24px);
+    background-color: #EEEDEB;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 10px
+}
+
+article.payments-content article.payment div.icon-area {
+    -webkit-box-ordinal-group: 1;
+    -ms-flex-order: 0;
+    order: 0;
+    width: 48px;
+    height: 48px;
+    background-color: #2E335B;
+    padding: 14.4px;
+    border-radius: 16px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center
+}
+
+article.payments-content article.payment div.payment-total {
+    -webkit-box-ordinal-group: 4;
+    -ms-flex-order: 3;
+    order: 3;
+    font-size: 20px;
+    font-weight: 700
+}
+
+@media (min-width: 768px) and (max-width: 1439px) {
+    .section-content-left {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap
+    }
+
+    .section-content-left .header {
+        width: 100%
+    }
+
+    .section-content-left .section-credit-card,
+    .section-content-left .section-payments {
+        width: 50%
+    }
+
+    .section-content-left .section-credit-card {
+        padding-top: 29px;
+        padding-bottom: 29px;
+        padding-left: 0
+    }
+
+    .section-content-left .section-credit-card figure.credit-card {
+        max-width: 94.6%;
+        height: 178.64px
+    }
+
+    .section-content-left .section-credit-card figure.credit-card .chip svg {
+        right: 9px
+    }
+
+    .section-content-left .section-credit-card figure.credit-card figure.vector-master {
+        top: 137px;
+        right: 23px
+    }
+
+    .section-content-left .section-payments {
+        margin-top: -18px
+    }
+
+    .section-content-left .section-payments .header {
+        position: relative
+    }
+
+    .section-content-left .section-payments .header h2 {
+        position: relative;
+        top: -9px
+    }
+
+    .section-content-left .section-payments .payments-content .payment {
+        width: 50%
+    }
+
+    .section-content-left .section-transactions {
+        width: 100%
+    }
+}
+
+@media (min-width: 1439px) {
+    .container {
+        padding: 23px 20px 48px 40px;
+        row-gap: 31px;
+        -webkit-column-gap: 65px;
+        column-gap: 65px;
+        -ms-grid-columns: max-content 1fr;
+        grid-template-columns: -webkit-max-content 1fr;
+        grid-template-columns: max-content 1fr
+    }
+
+    .container .nav {
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 3;
+        grid-column: 1/4;
+        height: auto
+    }
+
+    .container .nav header.nav-menu-toggle {
+        padding: 6px 20px;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center
+    }
+
+    .container .nav header.nav-menu-toggle input[class="i-search"] {
+        color: #2E335B;
+        display: block;
+        margin-left: 50px;
+        width: 327px;
+        height: 40px;
+        background: #FCFBF9;
+        border-radius: 16px;
+        border: none;
+        outline: none;
+        background-image: url("../img/icon/menu/search.svg");
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-position-x: 15.2px;
+        padding-left: 39.8px;
+        background-size: 16px;
+        font-size: 14px;
+        font-weight: 500
+    }
+
+    .container .nav header.nav-menu-toggle input[class="i-search"]::-webkit-input-placeholder {
+        color: #2e335b80
+    }
+
+    .container .nav header.nav-menu-toggle input[class="i-search"]:-ms-input-placeholder {
+        color: #2e335b80
+    }
+
+    .container .nav header.nav-menu-toggle input[class="i-search"]::-ms-input-placeholder {
+        color: #2e335b80
+    }
+
+    .container .nav header.nav-menu-toggle input[class="i-search"]::placeholder {
+        color: #2e335b80
+    }
+
+    .container .nav header.nav-menu-toggle div.header-right {
+        margin-left: auto;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        gap: 0
+    }
+
+    .container .nav header.nav-menu-toggle div.header-right div.language {
+        margin-right: 44px;
+        font-size: 16px;
+        font-weight: 500
+    }
+
+    .container .nav header.nav-menu-toggle div.header-right figure.avatar {
+        width: 48px;
+        height: 48px;
+        margin-left: 23px
+    }
+
+    .container .nav lang.language,
+    .container .nav .menu-content {
+        opacity: 0
+    }
+
+    .container .nav .icon-hamburger-menu {
+        display: none
+    }
+
+    .container .side-nav {
+        height: 623px;
+        margin-top: 116px;
+        grid-column: span 1;
+        padding-left: 20px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        font-size: 14px;
+        font-weight: 600
+    }
+
+    .container .side-nav a {
+        width: -webkit-max-content;
+        width: -moz-max-content;
+        width: max-content;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        gap: 19px
+    }
+
+    .container .side-nav-header {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        gap: 42.4px
+    }
+
+    .container .side-nav-header span {
+        color: #FFF;
+        margin-left: auto;
+        width: 16px;
+        height: 16px;
+        background: #E34255;
+        border-radius: 4px;
+        font-size: 10px;
+        font-weight: 600;
+        text-align: center;
+        line-height: 16px
+    }
+
+    .container .side-nav-footer {
+        margin-top: auto;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        gap: 38px
+    }
+
+    .container .main {
+        padding-left: 0;
+        grid-column: span 2
+    }
+
+    .container .main .section-content {
+        -webkit-column-gap: 37px;
+        column-gap: 37px;
+        border-radius: 48px;
+        padding: 40px;
+        background: #FCFBF9;
+        -ms-grid-columns: auto 1fr;
+        grid-template-columns: auto 1fr
+    }
+
+    .container .main .section-content-left {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-column-gap: 32px;
+        column-gap: 32px;
+        margin-top: 19px
+    }
+
+    .container .main .section-content-left .header {
+        width: 100%
+    }
+
+    .container .main .section-content-left .section-credit-card {
+        padding: 0;
+        padding-top: 38px;
+        -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+        margin: auto
+    }
+
+    .container .main .section-content-left .section-credit-card figure.credit-card {
+        height: 208px;
+        max-width: 100%
+    }
+
+    .container .main .section-content-left .section-credit-card figure.credit-card .vector-master {
+        top: 162px
+    }
+
+    .container .main .section-content-left .section-payments {
+        padding: 0;
+        width: 50%;
+        margin: -26px 0
+    }
+
+    .container .main .section-content-left .section-payments .payments-content {
+        padding: 0;
+        padding-top: 32px
+    }
+
+    .container .main .section-content-left .section-payments .payments-content .payment {
+        width: 50%;
+        height: 212px;
+        padding: 32px;
+        gap: 20px
+    }
+
+    .container .main .section-content-left .section-payments .payments-content .payment header.title h4.title-sub {
+        width: 111%
+    }
+
+    .container .main .section-content-left .section-transactions {
+        width: 100%;
+        padding-bottom: 0;
+        padding-top: 50px
+    }
+
+    .container .main .section-content-left .section-transactions table {
+        border: none;
+        border-color: #FCFBF9
+    }
+
+    .container .main .section-content-left .section-transactions table caption.header {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex
+    }
+
+    .container .main .section-content-left .section-transactions table caption.header .dropdown-sort-by {
+        display: block;
+        margin-left: auto;
+        width: 118px;
+        height: 30px
+    }
+
+    .container .main .section-content-left .section-transactions table tbody {
+        padding-top: 14px
+    }
+
+    .container .main .section-content-left .section-transactions table tbody tr:not(:first-child) td:first-child svg:first-child,
+    .container .main .section-content-left .section-transactions table tbody tr:not(:first-child) td:first-child h3.title-info:first-child,
+    .container .main .section-content-left .section-transactions table tbody tr:not(:first-child) td:first-child time.title-sub:nth-of-type(1) {
+        display: none
+    }
+
+    .container .main .section-content-left .section-transactions table tbody tr:not(:first-child) td:nth-of-type(2) {
+        display: none
+    }
+
+    .container .main .section-content-left .section-transactions table tbody tr {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center
+    }
+
+    .container .main .section-content-left .section-transactions table tbody tr .desk,
+    .container .main .section-content-left .section-transactions table tbody tr time,
+    .container .main .section-content-left .section-transactions table tbody tr h3 {
+        display: table-cell
+    }
+
+    .container .main .section-content-left .section-transactions table tbody tr .transaction-total {
+        padding-bottom: 0
+    }
+
+    .container .main .section-content-left .section-transactions table tbody tr td:first-child {
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        width: 74%
+    }
+
+    .container .main .section-content-left .section-transactions table tbody tr td {
+        gap: 43px
+    }
+
+    .container .main .section-content-left .section-transactions table tbody tr td .title {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        width: 50%
+    }
+
+    .container .main .section-content-left .section-transactions table tbody tr td .title time.title-sub {
+        margin-left: auto
+    }
+
+    .container .main .section-content-left .section-transactions table tbody tr td:first-child .icon {
+        width: 32px;
+        height: 32px
+    }
+
+    .container .main .section-content-left .section-transactions table tbody tr td:last-child {
+        margin-left: auto
+    }
+
+    .container .main .section-content-left .section-transactions table tbody tr td:last-child .icon-more {
+        width: 18px;
+        height: 18px
+    }
+
+    .container .main .section-content-right {
+        height: -webkit-fit-content;
+        height: -moz-fit-content;
+        height: fit-content;
+        display: block;
+        border-radius: 24px;
+        padding: 24px;
+        background-color: #EEEDEB
+    }
+
+    .container .main .section-content-right section.graphic {
+        padding-bottom: 82px
+    }
+
+    .container .main .section-content-right section.graphic h1.spent-this-day {
+        color: #2e335b99;
+        font-size: 14px;
+        font-weight: 500
+    }
+
+    .container .main .section-content-right section.graphic .total-this-day {
+        padding: 13.4px 0 40px 0;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center
+    }
+
+    .container .main .section-content-right section.graphic .total-this-day .txt-total {
+        font-size: 34px;
+        font-weight: 700
+    }
+
+    .container .main .section-content-right section.graphic .total-this-day .dropdown-week {
+        width: 75px;
+        height: 30px;
+        margin-left: auto;
+        line-height: 15px
+    }
+
+    .container .main .section-content-right section.graphic div.chart-area {
+        height: 200px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        position: relative;
+        overflow: hidden
+    }
+
+    .container .main .section-content-right section.graphic div.chart-area figure.chart {
+        background-image: url("../img/backdrop/chart.svg");
+        background-repeat: no-repeat;
+        position: relative;
+        height: inherit
+    }
+
+    .container .main .section-content-right section.graphic div.chart-area figure.chart .indicator {
+        font-size: 10px;
+        font-weight: 600;
+        position: relative;
+        width: 47px;
+        height: 25px;
+        line-height: 23.5px;
+        text-align: end;
+        padding-right: 1px;
+        color: #FFF;
+        border-radius: 5px;
+        background-color: #2E335B;
+        position: absolute;
+        left: 117px;
+        top: 1px
+    }
+
+    .container .main .section-content-right section.graphic div.chart-area figure.chart .indicator::before {
+        content: "";
+        position: absolute;
+        width: 13px;
+        height: 10px;
+        background-color: #2E335B;
+        bottom: -3px;
+        left: 37%;
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+        border-radius: 2px
+    }
+
+    .container .main .section-content-right section.graphic div.chart-area figure.lines {
+        height: inherit;
+        background-image: url("../img/backdrop/lines.svg");
+        background-repeat: repeat-x;
+        background-position-y: 8px;
+        position: absolute;
+        left: 328px
+    }
+
+    .container .main .section-content-right section.available-cards header.cards-title {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center
+    }
+
+    .container .main .section-content-right section.available-cards header.cards-title h2.title {
+        font-weight: 700
+    }
+
+    .container .main .section-content-right section.available-cards header.cards-title span.view-all {
+        font-size: 14px;
+        font-weight: 500;
+        color: #2e335b80;
+        margin-left: auto
+    }
+
+    .container .main .section-content-right section.available-cards div.cards-content {
+        padding-top: 35px
+    }
+
+    .container .main .section-content-right section.available-cards div.cards-content article.card {
+        background-color: #DBDDDC;
+        border-radius: 24px;
+        height: 96px;
+        padding: 36px 23.21px 36px 31px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center
+    }
+
+    .container .main .section-content-right section.available-cards div.cards-content article.card .money-info {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        width: 209.11px
+    }
+
+    .container .main .section-content-right section.available-cards div.cards-content article.card .money-info .money {
+        font-size: 24px;
+        font-weight: 700
+    }
+
+    .container .main .section-content-right section.available-cards div.cards-content article.card .money-info .money span {
+        font-size: 16px;
+        font-weight: 500;
+        color: #2e335b4d
+    }
+
+    .container .main .section-content-right section.available-cards div.cards-content article.card .money-info .info {
+        -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+        margin-left: auto;
+        font-size: 16px;
+        font-weight: 500
+    }
+
+    .container .main .section-content-right section.available-cards div.cards-content article.card:last-child {
+        margin-top: 22px;
+        width: 100%
+    }
+
+    .container .main .section-content-right section.available-cards div.cards-content article.card:last-child .icon-visa {
+        -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+        margin-left: auto
+    }
+}
+
+/*# sourceMappingURL=index.css.map */

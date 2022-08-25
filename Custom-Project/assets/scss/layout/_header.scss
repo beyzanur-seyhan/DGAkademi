@@ -1,0 +1,34 @@
+header.nav-menu-toggle {
+    height: 63px;
+    padding: 25px 20px 4px;
+    @include flex(null, flex-end, null, null);
+    background-color: $secondary-color;
+
+    a.logo {
+        font: {
+            size: 20px;
+            weight: 800;
+        }
+
+        @include flex(null, flex-end, null, 10px);
+    }
+}
+
+.header {
+    h1, h2 {
+        font-weight: 700;
+    }
+}
+
+article.payment {
+    header.title {
+        order: 1;
+
+        h4.title-sub {
+            min-width: 104%;
+            font: {
+                size: 10px;
+            }
+        }
+    }
+}

@@ -1,0 +1,31 @@
+// // BREAKPOINT
+@mixin respond($breakpoint){
+    @if $breakpoint == "md" {
+        @media (min-width: $screen-md-min) and (max-width: $screen-lg-min){
+            @content;
+        }
+    }
+
+    @if $breakpoint == "lg" {
+        @media (min-width: $screen-lg-min){
+            @content;
+        }
+    } 
+}
+
+// GRID
+@mixin grid($rows,  $columns, $gap: 0px){
+    display: grid;
+    grid-gap: $gap;
+    grid-template-columns: $columns;
+    grid-template-rows: $rows;
+}
+
+// FLEXBOX
+@mixin flex($justify, $align:center, $direction:row, $gap: 0){
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+    gap: $gap;
+}

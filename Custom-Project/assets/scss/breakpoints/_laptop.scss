@@ -1,0 +1,442 @@
+@include respond("lg") {
+    .container {
+        padding: 23px 20px 48px 40px;
+        row-gap: 31px;
+        column-gap: 65px;
+        grid-template-columns: max-content 1fr;
+
+        .nav {
+            grid-column: 1/4;
+            height: auto;
+
+            header.nav-menu-toggle {
+                padding: 6px 20px;
+                align-items: center;
+
+                input[class="i-search"] {
+                    color: $primary-color;
+                    display: block;
+                    margin-left: 50px;
+                    width: 327px;
+                    height: 40px;
+                    background: #FCFBF9;
+                    border-radius: 16px;
+                    border: none;
+                    outline: none;
+                    background-image: url("../img/icon/menu/search.svg");
+                    background-repeat: no-repeat;
+                    background-position-y: center;
+                    background-position-x: 15.2px;
+                    padding-left: 39.8px;
+                    background-size: 16px;
+
+                    font: {
+                        size: 14px;
+                        weight: 500;
+                    }
+                }
+
+                input[class="i-search"]::placeholder {
+                    color: #2e335b80;
+                }
+
+                div.header-right {
+                    margin-left: auto;
+                    @include flex(null, center);
+
+                    div.language {
+                        margin-right: 44px;
+
+                        font: {
+                            size: 16px;
+                            weight: 500;
+                        }
+                    }
+
+                    figure.avatar {
+                        width: 48px;
+                        height: 48px;
+                        margin-left: 23px;
+                    }
+                }
+            }
+
+            lang.language,
+            .menu-content {
+                opacity: 0;
+            }
+
+            .icon-hamburger-menu {
+                display: none;
+            }
+        }
+
+        .side-nav {
+            height: 623px;
+            margin-top: 116px;
+            grid-column: span 1;
+            padding-left: $p-20;
+            @include flex(null, null, column, null);
+
+            font: {
+                size: 14px;
+                weight: 600;
+            }
+
+            a {
+                width: max-content;
+                @include flex(null, center, row, 19px);
+            }
+
+            &-header {
+                @include flex(null, null, column, 42.4px);
+
+                span {
+                    color: #FFF;
+                    margin-left: auto;
+                    width: 16px;
+                    height: 16px;
+                    background: #E34255;
+                    border-radius: 4px;
+
+                    font: {
+                        size: 10px;
+                        weight: 600;
+                    }
+
+                    text-align: center;
+                    line-height: 16px;
+                }
+            }
+
+            &-footer {
+                margin-top: auto;
+                @include flex(null, null, column, 38px);
+            }
+        }
+
+        .main {
+            padding-left: 0;
+            grid-column: span 2;
+
+            .section-content {
+                column-gap: 37px;
+                border-radius: 48px;
+                padding: 40px;
+                background: #FCFBF9;
+                grid-template-columns: auto 1fr;
+
+                &-left {
+                    display: flex;
+                    flex-wrap: wrap;
+                    column-gap: 32px;
+                    margin-top: 19px;
+
+                    .header {
+                        width: 100%;
+                    }
+
+                    .section-credit-card {
+                        padding: 0;
+                        padding-top: 38px;
+                        flex-grow: 1;
+                        margin: auto;
+
+                        figure.credit-card {
+                            height: 208px;
+                            max-width: 100%;
+
+                            .vector-master {
+                                top: 162px;
+                            }
+                        }
+                    }
+
+                    .section-payments {
+                        padding: 0;
+                        width: 50%;
+                        margin: -26px 0;
+
+                        .payments-content {
+                            padding: 0;
+                            padding-top: 32px;
+
+                            .payment {
+                                width: 50%;
+                                height: 212px;
+                                padding: 32px;
+                                gap: 20px;
+
+                                header.title {
+                                    h4.title-sub {
+                                        width: 111%;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .section-transactions {
+                        width: 100%;
+                        padding-bottom: 0;
+                        padding-top: 50px;
+
+                        table {
+                            border: none;
+                            border-color: #FCFBF9;
+
+                            caption.header {
+                                display: flex;
+
+                                .dropdown-sort-by {
+                                    display: block;
+                                    margin-left: auto;
+                                    width: 118px;
+                                    height: 30px;
+                                }
+                            }
+
+                            tbody {
+                                padding-top: 14px;
+
+                                tr:not(:first-child) {
+                                    td:first-child {
+
+                                        svg:first-child,
+                                        h3.title-info:first-child,
+                                        time.title-sub:nth-of-type(1) {
+                                            display: none;
+                                        }
+                                    }
+
+                                    td:nth-of-type(2) {
+                                        display: none;
+                                    }
+                                }
+
+                                tr {
+
+                                    .desk,
+                                    time,
+                                    h3 {
+                                        display: table-cell;
+                                    }
+
+                                    @include flex(null, center, null, null);
+
+                                    .transaction-total {
+                                        padding-bottom: 0;
+                                    }
+
+                                    td:first-child {
+                                        align-items: center;
+                                        width: 74%;
+                                    }
+
+                                    td {
+                                        gap: 43px;
+
+                                        .title {
+                                            display: flex;
+                                            width: 50%;
+
+                                            time.title-sub {
+                                                margin-left: auto;
+                                            }
+                                        }
+                                    }
+
+                                    td:first-child {
+                                        .icon {
+                                            width: 32px;
+                                            height: 32px;
+                                        }
+                                    }
+
+                                    td:last-child {
+                                        margin-left: auto;
+
+                                        .icon-more {
+                                            width: 18px;
+                                            height: 18px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                &-right {
+                    height: fit-content;
+                    display: block;
+                    border-radius: 24px;
+                    padding: 24px;
+                    background-color: #EEEDEB;
+                    ;
+
+                    section.graphic {
+                        padding-bottom: 82px;
+
+                        h1.spent-this-day {
+                            color: #2e335b99;
+
+                            font: {
+                                size: 14px;
+                                weight: 500;
+                            }
+                        }
+
+                        .total-this-day {
+                            padding: 13.4px 0 40px 0;
+                            @include flex(null, center, null, null);
+
+                            .txt-total {
+                                font: {
+                                    size: 34px;
+                                    weight: 700;
+                                }
+                            }
+
+                            .dropdown-week {
+                                width: 75px;
+                                height: 30px;
+                                margin-left: auto;
+                                line-height: 15px;
+                            }
+                        }
+
+                        div.chart-area {
+                            height: 200px;
+                            display: flex;
+                            position: relative;
+                            overflow: hidden;
+
+                            figure.chart {
+                                background-image: url("../img/backdrop/chart.svg");
+                                background-repeat: no-repeat;
+                                position: relative;
+                                height: inherit;
+    
+                                .indicator {
+                                    font: {
+                                        size: 10px;
+                                        weight: 600;
+                                    }
+    
+                                    position: relative;
+                                    width: 47px;
+                                    height: 25px;
+                                    line-height: 23.5px;
+                                    text-align: end;
+                                    padding-right: 1px;
+                                    color: #FFF;
+                                    border-radius: 5px;
+                                    background-color: $primary-color;
+                                    position: absolute;
+                                    left: 117px;
+                                    top: 1px;
+                                }
+    
+                                .indicator::before {
+                                    content: "";
+                                    position: absolute;
+                                    width: 13px;
+                                    height: 10px;
+                                    background-color: $primary-color;
+                                    bottom: -3px;
+                                    left: 37%;
+                                    transform: rotate(45deg);
+                                    border-radius: 2px;
+                                }
+                            }
+
+                            figure.lines {
+                                height: inherit;
+                                background-image: url("../img/backdrop/lines.svg");
+                                background-repeat: repeat-x; 
+                                background-position-y: 8px;
+                                position: absolute;
+                                left: 328px;
+                            }
+                        }
+                    }
+
+                    section.available-cards {
+                        header.cards-title {
+                            @include flex(null, center, null, null);
+
+                            h2.title {
+                                font-weight: 700;
+                            }
+
+                            span.view-all {
+                                font: {
+                                    size: 14px;
+                                    weight: 500;
+                                }
+
+                                color: #2e335b80;
+                                margin-left: auto;
+                            }
+                        }
+
+                        div.cards-content {
+                            padding-top: 35px;
+
+                            article.card {
+                                background-color: #DBDDDC;
+                                border-radius: 24px;
+                                height: 96px;
+                                padding: 36px 23.21px 36px 31px;
+                                display: flex;
+                                align-items: center;
+
+                                .money-info {
+                                    display: flex;
+                                    width: 209.11px;
+
+                                    .money {
+                                        font: {
+                                            size: 24px;
+                                            weight: 700;
+                                        }
+
+                                        span {
+                                            font: {
+                                                size: 16px;
+                                                weight: 500;
+                                            }
+
+                                            color: #2e335b4d;
+                                        }
+                                    }
+
+                                    .info {
+                                        align-self: center;
+                                        margin-left: auto;
+
+                                        font: {
+                                            size: 16px;
+                                            weight: 500;
+                                        }
+                                    }
+                                }
+                            }
+
+                            article.card:last-child {
+                                margin-top: 22px;
+                                width: 100%;
+
+                                .icon-visa {
+                                    align-self: center;
+                                    margin-left: auto;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
