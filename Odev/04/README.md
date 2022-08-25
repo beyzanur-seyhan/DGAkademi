@@ -1,6 +1,7 @@
 # Form Builder (Proje Fikri)
 
 Bu ödev bir proje fikri içermektedir.
+<a href="https://www.figma.com/file/adPFcqmd1HHg2MNvS99aAS/Form-Builder?node-id=0%3A1">Detayı Görüntüle</a>
 
 ## Temel Problem
 Artık günümüzdeki insanlar çağın getirdiği yeniliklerle bir işi hızlı bir şekilde gerçekleştirme eğilimindedirler. Bu işler gündelik hayatın getirdiklerinin yanında iş hayatını da kapsamaktadır. İş hayatında yazılım sektörünü düşünecek olursak; bir yazılım uzmanının bir programı geliştirirken yararlandığı bazı araçlar mevcuttur. Bu araçlar yazılım uzmanının projeyi daha hızlı oluşturmasını sağlar. Bahsettiğim araçlar bunun yanında isteklere göre özelliştirmelere de izin verebilir.
@@ -23,10 +24,6 @@ Front-end geliştiricileri özel tasarımların form öğelerini daha hızlı ol
 - Basit arayüze sahip
 - Aracı tanıyıp kullanması kolay
 - Özel tasarım olan projelerde hıza hız katar.
-
-<a href="https://www.figma.com/file/adPFcqmd1HHg2MNvS99aAS/Form-Builder?node-id=0%3A1">
-<h2>Detayı Görüntüle</h2>
-</a>
 
 ## Prototip
 <img src="prototip.png">
