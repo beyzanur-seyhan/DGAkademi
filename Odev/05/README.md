@@ -2,7 +2,7 @@
 
 ## Asenkron ve Senkron Programlama
 
-### Asenkron Proglama
+### Asenkron Programlama
 
 Kod akışının sırayla işlemediği, işlemlerin birbirini beklemediği, kod akışının işlem süresine göre devam ettiği programlamaya asenkron programlama denir. Asenkron programlamanın çalışma şekli sıradaki işlemin ne kadar sürdüğüyle ilgilidir. Kod akışında en kısa sürede biten işlemi ilk sıraya, en geç biten işlemi ise en sona alarak sürecini tamamlar.
 <br><br>
