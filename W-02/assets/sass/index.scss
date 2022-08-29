@@ -1,0 +1,31 @@
+/**************** Abstracts ****************/
+@import "abstracts/variable";
+@import "abstracts/mixins";
+
+/**************** Base ****************/
+@import "base/reset";
+@import "base/typography";
+
+/**************** Themes ****************/
+@import "themes/default";
+
+/**************** Components ****************/
+@import "components/genres";
+@import "components/rating";
+@import "components/see-more";
+
+/**************** Layout ****************/
+@import "layout/container";
+@import "layout/navbar";
+@import "layout/main";
+@import "layout/header";
+@import "layout/section";
+@import "layout/article";
+@import "layout/aside";
+@import "layout/footer";
+
+/**************** Pages ****************/
+@import "pages/detail-movie";
+
+/**************** Breakpoints ****************/
+@import "breakpoints/desktop";

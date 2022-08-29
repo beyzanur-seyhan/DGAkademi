@@ -1,0 +1,19 @@
+.genres {
+    @include flex(null, null, null, wrap, 8px);
+    
+    .genre {
+        height: 18px;
+        background-color: $color-marian-blue;
+        color: $color-sky-blue;
+        padding: 4px 12px;
+        border-radius: 100px;
+        text-transform: uppercase;
+
+        font: {
+            family: 'Mulish';
+            size: $fsize-12px - 4;
+            weight: 700;
+        }
+
+    }
+}

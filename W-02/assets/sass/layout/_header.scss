@@ -1,0 +1,16 @@
+header {
+    @include flex(space-between);
+
+    h1, h2 {
+        color: $color-oxford-blue;
+        font: {
+            size: $fsize-12px + 4;
+            weight: 900;
+            family: 'Merriweather', serif;
+        }
+    }
+
+    a#remove-all {
+        display: none;
+    }
+}

@@ -1,0 +1,291 @@
+@include md {
+    body, html {
+        height: 100%;
+    }
+
+    body {
+        background-color: $color-whiter;
+
+        .container {
+            max-width: 1227px;
+            margin: auto;
+            padding: 48px 24px 0 24px;
+            
+            nav {
+                padding: 28px 0 55px 0;
+                padding-top: 28px;
+                padding-bottom: 55px;
+                align-items: center;
+                justify-content: normal;
+
+                a:nth-child(1), a:nth-child(3) {
+                    display: none;
+                }
+
+                a.logo {
+                    font-size: 24px;
+                    margin-right: auto;
+                }
+
+                a.desk-nav {
+                    display:  initial;
+
+                    img {
+                        height: 100%;
+                    }
+                }
+
+                a:nth-child(4){
+                    width: 29.1px;
+                    height: 35px;
+                    margin-right: 42.16px;
+                }
+
+                a:nth-child(5){
+                    width: 36.14px;
+                    height: 37.92px;
+                    margin-right: 33.96px;
+                }
+
+                a.avatar {
+                    width: 80.04px;
+                    height: 77px;
+                    background-image: url("../img/avatar.svg");
+                    border-radius: 100%;
+                }
+            }
+
+            main {
+                padding: 40px 16px 58px 16px;
+                grid-template-columns: 2fr 1fr;
+                border-radius: 10px;
+
+                section.content {
+                    padding: 0 71px 0 24px;
+                    section.popular-films, section.trend-films {
+                        header {
+                            margin-left: 20.76px;
+
+                            a.see-more {
+                                margin-right: 21.24px;
+                            }
+                        }
+
+                        article#popular-films, article#trend-films {
+                            padding-top: 17px;
+
+                            article.popular-film, article.trend-film {
+                                display: block;
+                                
+                                figure {
+                                    max-width: 143px;
+                                    height: 212px;
+                                    position: relative;
+
+                                    img {
+                                        height: -webkit-fill-available;
+                                    }
+
+                                    .img-filter {
+                                        display: block;
+                                        position: absolute;
+                                        left: 4px;
+                                        z-index: 2;
+                                        opacity: 0.4;
+                                        filter: blur(20px);
+                                        width: 135px;
+                                        height: 140px;
+                                        top: 64px;
+                                    }
+                                }
+
+                                .description {
+                                    figcaption {
+                                        margin-top: 12px;
+                                    }
+
+                                    .rating {
+                                        margin-top: 8px;
+                                    }
+
+                                    .genres {
+                                        display: none;
+                                    }
+                                    
+                                    time {
+                                        display: none;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    section.trend-films {
+                        margin-top: 31px;
+                        display: block;
+
+                        article#trend-films {
+                            @include flex(null, null, null, wrap, 16px);
+                            
+                            article.trend-film {
+                                font-family: 'Mulish';
+        
+                                figure{
+                                    img {
+                                        border-radius: 5px;
+                                    }
+                                }
+                            
+                                .description {
+                                    figcaption {
+                                        width: 128px;
+                                        a {
+                                            color: #000000;
+                                            font: {
+                                                size: $fsize-12px + 2;
+                                                weight: 700;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                aside.favorite-films {
+                    display: block;
+                    padding: 3px 16px 0 0;
+                }
+            }
+        }
+
+        #container-movie {
+            height: 610px;
+            max-width: 100%;
+
+            nav, div.play-video, main {
+                max-width: 1227px;
+                margin: auto;
+            }
+
+            nav {
+                a.logo {
+                    display: initial;
+                    color: #FFF;
+                }
+            }
+
+            div.play-video {
+                top: 99px;
+            }
+
+            main {
+                padding: 25px 38px 30px 35px;
+                top: 291px;
+                height: auto;
+                display: block;
+                border-radius: 20px 20px 0px 0px;
+
+                section.content {
+                    padding: 0;
+
+                    header {
+                        div.movie-info {
+                            display: flex;
+                            align-items: center;
+                            gap: 29px;
+
+                            div.rating {
+                                margin-top: 0;
+                            }
+                        }
+                    }
+
+                    div.genres {
+                        margin-top: 32px;
+                    }
+
+                    div.facts {
+                        margin-top: 31px;
+                    }
+
+                    div.overview {
+                        margin-top: 28px;
+                    }
+
+                    div.cast {
+                        margin-top: 67px;
+
+                        figure.cast-actor {
+                            &:nth-child(4) ~ figure.cast-actor {
+                                display: block;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        article#popular-films, article#favorite-movies {
+            flex-wrap: wrap;
+            flex-direction: row;
+        }
+
+        #favorite-movies {
+            main {
+                padding: 50px 46px 45px 66px;
+                display: block;
+
+                section.content {
+                    padding: 0;
+
+                    section.favorite-films {
+                        header {
+                            a.see-more {
+                                display: none;
+                            }
+
+                            a#remove-all {
+                                display: initial;
+                            }
+                        }
+                        article#favorite-films {
+                            gap: 19.12px;
+                            padding-top: 17.93px;
+
+                            article.favorite-film {
+                                gap: 51.21px;
+
+                                figure {
+                                    width: 272.05px;
+                                    height: 143.4px;
+                                    max-width: 272.05px;
+                                    max-height: 143.4px;
+
+                                    a {
+                                        width: inherit;
+                                        height: 100%;
+                                        display: block;
+                                        background-size: cover;
+                                        background-position: center;
+                                    }
+                                }
+
+                                a#remove-item {
+                                    display: block;
+                                    align-self: flex-start;
+                                    margin-left: auto;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        footer {
+            display: none;
+        }
+    }
+}

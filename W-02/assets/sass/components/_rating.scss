@@ -1,0 +1,22 @@
+.rating {
+    color: $color-pewter;
+    position: relative;
+    font: {
+        family: 'Mulish';
+        size: $fsize-12px;
+        weight: 400;
+    }
+
+    &::before {
+        content: "";
+        background-image: url("../img/icons/star-icon.svg");
+        background-size: contain;
+        position: absolute;
+        height: 12px;
+        width: 12px;
+    }
+
+    span {
+        margin-left: calc(32px - 16px);
+    }
+}

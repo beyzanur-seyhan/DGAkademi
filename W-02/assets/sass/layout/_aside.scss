@@ -1,0 +1,19 @@
+aside.favorite-films {
+    display: none;
+
+    figure{
+        width: 85px;
+        height: 120px;
+        max-width: 85px;
+        max-height: 120px;
+
+        a {
+            width: inherit;
+            height: 100%;
+            display: block;
+            background-size: cover;
+            background-position: center;
+            border-radius: 5px;
+        }
+    }
+}
