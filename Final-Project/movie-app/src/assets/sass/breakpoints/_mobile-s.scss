@@ -1,0 +1,63 @@
+@include xs {
+    .buy-now {
+        .credit-card {
+            background-size: contain;
+            background-repeat: no-repeat;
+
+            &-content {
+                top: 72.77px;
+
+                @include xs {
+                    top: 87.77px;
+                }
+            }
+
+            &-info {
+                margin-top: 24px !important;
+            }
+        }
+    }
+
+    main {
+        form {
+            label {
+                input {
+                    min-height: 28px !important;
+                    height: 28px !important;
+                }
+            }
+
+            .form-card-info {
+                margin-bottom: 26px !important;
+                flex-direction: column;
+                row-gap: 0 !important;
+
+                .expiry-date {
+                    margin-bottom: 12px;
+
+                    &-dropdowns {
+                        height: 28px !important;
+                    }
+
+                    .error-message {
+                        top: 5px;
+                        left: 158px;
+                    }
+
+                    .err-expiry-year {
+                        margin-left: 48px !important;
+                    }
+                }
+
+                label:last-child {
+                    max-width: 100% !important;
+                    margin-left: 0 !important;
+                }
+            }
+
+            .payment {
+                gap: 32px !important;
+            }
+        }
+    }
+}

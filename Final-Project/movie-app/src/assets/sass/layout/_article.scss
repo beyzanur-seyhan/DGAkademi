@@ -1,0 +1,81 @@
+article.popular-film, article.card {
+    font-family: 'Mulish';
+    margin-top: 16px;
+    @include flex(null, null, null, null, 16px);
+
+    figure{
+        max-width: 85px;
+
+        a {
+            border-radius: 5px;
+        }
+        
+        img {
+            border-radius: 5px;
+        }
+    }
+
+    .description {
+        figcaption {
+            width: 128px;
+            a {
+                color: #000000;
+                font: {
+                    size: $fsize-12px + 2;
+                    weight: 700;
+                }
+            }
+        }
+
+        .rating {
+            margin-top: 11px;
+        }
+
+        .genres {
+            margin-top: 8px;
+            margin-bottom: 8px;
+        }
+
+        time {
+            position: relative;
+            font: {
+                size: $fsize-12px;
+                weight: 400;
+            }
+
+            &::before {
+                content: "";
+                position: absolute;
+                top: 2px;
+                width: 9.72px;
+                height: 100%;
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-image: url("../img/icons/clock-icon.svg");
+            }
+
+            span {
+                margin-left: calc(32px - 16px);
+            }
+        }
+    }
+}
+
+article.card {
+    figure {
+        width: 85px;
+        max-height: 120px;
+
+        a {
+            width: inherit;
+            height: 100%;
+            display: block;
+            background-size: cover;
+            background-position: center;
+        }
+    }
+
+    span.remove-item {
+        display: none;
+    }
+}

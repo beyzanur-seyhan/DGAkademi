@@ -1,0 +1,36 @@
+footer {
+    width: 100%;
+    position: fixed;
+    z-index: 3;
+    background-color: #FFF;
+    left: 0;
+    bottom: 0;
+    height: 60px;
+    padding: 18px 56px;
+    box-shadow: 0px 0px 8px rgba($color-midnight-blue, 0.08);
+    nav {
+        ul {
+            @include flex(space-between, center);
+            
+            li {
+                a {
+                    width: 100%;
+                    height: 100%;
+                    display: block;
+                    background-repeat: no-repeat;
+                    background-position: center;
+
+                    span {
+                        background-color: $color-black;
+                        font-size: 10px;
+                        width: 11px;
+                        color: $color-white;
+                        text-align: center;
+                        display: block;
+                        border-radius: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

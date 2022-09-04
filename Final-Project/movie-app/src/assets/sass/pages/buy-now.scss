@@ -1,0 +1,271 @@
+@import "../abstracts/variable";
+@import "../abstracts/_mixins.scss";
+
+.buy-now {
+    position: fixed;
+    opacity: 0.3;
+    left: -992px;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    background-color: #F9F9F9;
+    transition: all 0.8s ease-in-out;
+
+    &.open {
+        left: 0;
+        opacity: 1;
+    }
+
+    .header {
+        padding: 20px 24px;
+
+        span {
+            cursor: pointer;
+            color: $color-black;
+
+            font: {
+                size: 14px;
+                weight: 600;
+                family: "Mulish";
+            }
+
+            img {
+                margin-right: 8px;
+            }
+        }
+    }
+
+    .credit-card {
+        max-width: 348px;
+        position: relative;
+        padding: 0 0 29.15px 22px;
+        background-image: url("../img/cart-gradient.svg");
+        margin: auto;
+        margin-bottom: 19.85px;
+        background-size: cover;
+        height: 224.15px;
+
+        &-content {
+            width: 206px;
+            font-family: 'Inter', sans-serif;
+            position: absolute;
+            top: 112.77px;
+            font-family: "Mulish";
+        }
+
+        &-number {
+            font-weight: 700;
+            color: #E8E8E8;
+            letter-spacing: 0.04em;
+            text-shadow: 0px 2px 5px rgba(23, 23, 23, 0.4);
+        }
+
+        &-info {
+            gap: 20px;
+            margin-top: 38px;
+            display: flex;
+            color: $color-white;
+
+            .name, .date {
+                margin-top: 4px;
+                text-shadow: 0px 4px 4px rgba(22, 22, 22, 0.16);
+                font: {
+                    size: 12px;
+                    weight: 700;
+                }
+            }
+
+            .title {
+                font: {
+                    size: 10px;
+                    weight: 400;
+                }
+            }
+        }
+    }
+
+    main {
+        padding: 6px 13px 52.34px 13px;
+        top: 0;
+        box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
+
+        form {
+            font-family: "Mulish";
+
+            label {
+                position: relative;
+                display: block;
+                margin-bottom: 12px;
+                font-weight: 600;
+
+                input {
+                    outline: none;
+                    min-height: 46px;
+                    height: 46px;
+                    width: 100%;
+                    margin-top: 8.62px;
+                    display: block;
+                    background-color: #EAECEE;
+                    border-radius: 10px;
+                    border: none;
+                    padding-top: 4px;
+                    padding-left: 20px;
+                }
+            }
+
+            .form-card-info {
+                display: flex;
+                gap: 47px;
+                margin-bottom: 36px;
+
+                .expiry-date {
+                    position: relative;
+                    display: inline;
+                    font-weight: 600;
+                    flex-grow: 1;
+    
+                        &-dropdowns {
+                            height: 46px;
+                            margin-top: 8.62px;
+                        }
+                     
+                        select {
+                            color: #6e6f6f;
+                            font-family: "Mulish";
+                            outline: none;
+                            border: none;
+                            width: 50%;
+                            height: 100%;
+                            background-color: #EAECEE;
+
+                            &:first-child {
+                                padding-left: 20px;
+                                border-top-left-radius: 10px;
+                                border-end-start-radius: 10px;
+                                border-right: 1px solid #b0b1b1;
+                            }
+
+                            &:last-child {
+                                padding-left: 10px;
+                                border-top-right-radius: 10px;
+                                border-end-end-radius: 10px;
+                            }
+                        }
+
+                        .error-message {
+                            top: 78px;
+                            margin-left: 0;
+                        }
+
+                        .err-expiry-year {
+                            margin-left: 95px;
+                        }
+                }
+    
+                label:last-child {
+                    max-width: 112.65px;
+                    display: inline;
+                    margin-left: auto;
+                    margin-bottom: 0;
+                }
+            }
+
+            .payment {
+                @include flex(null, center, null, wrap, 0);
+
+                    .total {
+                        color: #5F5F5F;
+                        font: {
+                            size: 12px;
+                            weight: 700;
+                            family: "Mulish";
+                        }
+                    }
+                
+                    button {
+                        cursor: pointer;
+                        margin-left: auto;
+                        max-width: 211.19px;
+                        flex-grow: 1;
+                        padding: 7px 0;
+                        border: none;
+                        border-radius: 20px;
+                        background-color: $color-marian-blue;
+                        color: #979797;
+                        transition: 0.3s all;
+
+                        font: {
+                            weight: 600;
+                            family: "Mulish";
+                        }
+
+                        &:hover {
+                            color: $color-white;
+                            background-color: $color-oxford-blue;
+                        }
+                    }
+            }
+
+            .error-message {
+                position: absolute;
+                top: 5px;
+                padding: 2px;
+                display: inline;
+                margin-left: 8px;
+                font-size: 8px;
+                color: $color-white;
+                background-color: #6c6b8f;
+            }
+        }
+    }
+}
+
+.successful-payment {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+    opacity: 0;
+    transition: all 1s linear;
+    background: rgba(0, 0, 0, 0.44);
+
+    .message-box {
+        margin: auto;
+        max-width: 328px;
+        height: 248px;
+        flex-grow: 1;
+        border-radius: 10px;
+        background-color: $color-white;
+        @include flex(center, center, column, nowrap, 8px);
+
+        font: {
+            weight: 700;
+            family: "Mulish";
+        }
+    }
+}
+
+.open-msg-box {
+    opacity: 1;
+    animation: fadeAndHideBack 1s linear forwards;
+}
+
+.msg-box-hide {
+    opacity: 0;
+    visibility: hidden;
+    animation: fadeAndHide 1s linear forwards;
+}
+
+@keyframes fadeAndHideBack {
+    0% { opacity: 0; }
+    0.1% { opacity: 0.5; }
+    100% { opacity: 1; }
+  }
+
+  @keyframes fadeAndHide {
+    0% { opacity: 1; }
+    0.1% { opacity: 0.5; }
+    100% { opacity: 0;}
+  }

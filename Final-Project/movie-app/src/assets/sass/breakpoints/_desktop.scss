@@ -1,0 +1,344 @@
+@include md {
+
+    body,
+    html {
+        height: 100%;
+    }
+
+    body {
+        background-color: $color-whiter;
+
+        .container {
+            max-width: 1227px;
+            margin: auto;
+            padding: 48px 24px 154px 24px;
+
+            header {
+                padding: 0;
+
+                nav {
+                    padding: 28px 0 55px 0;
+                    padding-top: 28px;
+                    padding-bottom: 55px;
+
+                    ul {
+                        align-items: center;
+                        justify-content: normal;
+
+                        li:nth-child(1),
+                        li:nth-child(3) {
+                            display: none;
+                        }
+
+                        li.logo {
+                            margin-right: auto;
+
+                            a {
+                                font-size: 24px;
+                            }
+                        }
+
+                        li[class*="desk-nav"],
+                        a.desk-nav {
+                            display: initial;
+
+                            img,
+                            a {
+                                height: 100%;
+                            }
+
+                            a {
+                                display: block;
+                            }
+                        }
+
+                        a.logo-white {
+                            color: $color-white;
+                        }
+
+                        li.desk-nav-card-icon {
+                            width: 35px;
+                            height: 35px;
+                            margin-right: 42.16px;
+                            position: relative;
+
+                            a {
+                                background-size: 35px 35px;
+                            }
+
+                            span.shopping-cart {
+                                span {
+                                    width: 14px;
+                                    height: 14px;
+                                    background-color: #000;
+                                    font-size: 10px;
+                                    font-weight: 600;
+                                    position: absolute;
+                                    top: 0px;
+                                    left: -2px;
+                                    color: #fff;
+                                    text-align: center;
+                                    line-height: 14px;
+                                    display: block;
+                                    border-radius: 100%;
+                                }
+                            }
+                        }
+
+                        li.desk-nav-notif-icon {
+                            width: 36.14px;
+                            height: 37.92px;
+                            margin-right: 33.96px;
+                        }
+
+                        li.avatar {
+                            width: 80.04px;
+                            height: 77px;
+                            background-image: url("../img/avatar.svg");
+                            border-radius: 100%;
+                        }
+                    }
+                }
+            }
+
+            footer {
+                display: none;
+            }
+
+            main {
+                padding: 40px 16px 58px 16px;
+                grid-template-columns: 2fr 1fr;
+                border-radius: 10px;
+
+                section.content {
+                    padding: 0 71px 0 24px;
+
+                    section.popular-films,
+                    section.trend-films {
+                        header {
+                            margin-left: 20.76px;
+
+                            span.btn-outline-gray {
+                                margin-right: 21.24px;
+                            }
+                        }
+
+                        article[class$="-films-content"] {
+                            padding-top: 17px;
+                            @include flex(null, null, null, wrap, 16px);
+
+                            article.popular-film,
+                            article.trend-film {
+                                display: block;
+
+                                figure {
+                                    max-width: 143px;
+                                    height: 212px;
+
+                                    img {
+                                        height: -webkit-fill-available;
+                                    }
+                                }
+
+                                .description {
+                                    figcaption {
+                                        margin-top: 12px;
+                                    }
+
+                                    .rating {
+                                        margin-top: 8px;
+                                    }
+
+                                    .genres {
+                                        display: none;
+                                    }
+
+                                    time {
+                                        display: none;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    section.trend-films {
+                        margin-top: 31px;
+                        display: block;
+
+                        article.trend-films-content {
+                            article.trend-film {
+                                font-family: 'Mulish';
+
+                                figure {
+                                    img {
+                                        border-radius: 5px;
+                                    }
+                                }
+
+                                .description {
+                                    figcaption {
+                                        width: 128px;
+
+                                        a {
+                                            color: #000000;
+
+                                            font: {
+                                                size: $fsize-12px + 2;
+                                                weight: 700;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                aside.card-films {
+                    display: block;
+                    padding: 3px 16px 0 0;
+
+                    article {
+                        article.card {
+                            span.remove-item {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+
+            main.main-card {
+                padding: 50px 46px 45px 66px;
+                display: block;
+
+                section.content {
+                    padding: 0;
+
+                    header {
+                        span.btn-outline-gray:nth-of-type(1) {
+                            display: none;
+                        }
+
+                        span {
+                            cursor: pointer;
+                        }
+
+                        span.remove-all {
+                            display: initial;
+                        }
+                    }
+                }
+
+                article {
+                    article.card {
+                        gap: 51.21px;
+                        margin-top: 19.12px;
+
+                        figure {
+                            width: 272.05px;
+                            height: 143.4px;
+                            max-width: 272.05px;
+                            max-height: 143.4px;
+
+                            a {
+                                width: inherit;
+                                height: 100%;
+                                display: block;
+                                background-size: cover;
+                                background-position: bottom;
+                            }
+                        }
+
+                        span.remove-item {
+                            cursor: pointer;
+                            display: block;
+                            align-self: flex-start;
+                            margin-left: auto;
+                        }
+                    }
+                }
+            }
+
+            .buy-now {
+                margin: auto;
+
+                main {
+                    max-width: 944px;
+                    margin: auto;
+                    top: 0;
+                    padding: 50px 16px 50px 16px;
+
+                    form {
+                        max-width: 710px;
+                        margin: auto;
+                    }
+                }
+
+                header.header {
+                    max-width: 1227px;
+                    margin: auto;
+                }
+            }
+        }
+
+        .container-movie {
+            height: 610px;
+            max-width: 100%;
+
+            div.play-video {
+                top: 99px;
+            }
+
+            main {
+                padding: 25px 38px 30px 35px;
+                top: 291px;
+                height: auto;
+                display: block;
+                border-radius: 20px 20px 0px 0px;
+
+                section.content {
+                    padding: 0;
+
+                    header {
+                        div.movie-info {
+                            display: flex;
+                            align-items: center;
+                            gap: 29px;
+
+                            #movie-title {
+                                max-width: 100%;
+                            }
+
+                            div.rating {
+                                margin-top: 0;
+                            }
+                        }
+                    }
+
+                    div.genres {
+                        margin-top: 32px;
+                    }
+
+                    div.facts {
+                        margin-top: 31px;
+                    }
+
+                    div.overview {
+                        margin-top: 28px;
+                    }
+
+                    div.cast {
+                        margin-top: 67px;
+
+                        figure.cast-actor {
+                            &:nth-child(4)~figure.cast-actor {
+                                display: block;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
