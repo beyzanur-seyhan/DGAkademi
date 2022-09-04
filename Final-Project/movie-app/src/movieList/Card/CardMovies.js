@@ -22,11 +22,11 @@ function CardMovies({cardCount}) {
                 cardCount.map((movie, index) => (
                         <article className="card" key={movie.id}>
                             <figure>
-                                <Link to={`/movie/popular/` + movie.id} style={{ backgroundImage: `url(${imageBaseUrl + movie.poster_path})` }} />
+                                <Link to={`/movie/` + movie.id} style={{ backgroundImage: `url(${imageBaseUrl + movie.poster_path})` }} />
                             </figure>
                             <div className="description">
                                 <figcaption>
-                                    <Link to={`/movie/popular/` + movie.id}>{movie.title}</Link>
+                                    <Link to={`/movie/` + movie.id}>{movie.title}</Link>
                                 </figcaption>
                                 <div className="rating">
                                     <span>{movie.vote_average}/10 IMDb</span>

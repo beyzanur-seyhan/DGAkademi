@@ -22,7 +22,6 @@ function BuyNowMovie({ setDisplay }) {
             cvv: ''
         },
         validationSchema,
-
     });
 
     const OpenSuccessMessage = () => {
@@ -43,8 +42,6 @@ function BuyNowMovie({ setDisplay }) {
     const HideMsgBox = () => {
         OpenMsgSuccess("msg-box-hide");
     }
-
-    console.log(errors);
 
     return (
         <>
@@ -151,7 +148,7 @@ function BuyNowMovie({ setDisplay }) {
                             {errors.cvv && touched.cvv && <div className="error-message">
                                 {errors.cvv || touched.cvv}
                             </div>}
-                            <input type="number" name="cvv" placeholder="***" value={values.cvv} onChange={handleChange} onBlur={handleBlur} onKeyDown={(e) => e.target.value.length > e.target.maxLength && (e.target.value = e.target.value.slice(0, e.target.maxLength))} maxLength={2} />
+                            <input type="number" name="cvv" placeholder="***" value={values.cvv} onChange={handleChange} onBlur={handleBlur} onKeyDown={(e) => e.target.value.length > e.target.maxLength && (e.target.value = e.target.value.slice(0, e.target.maxLength))} onKeyPress={(e) => {if (new RegExp(/[0-9]+$/).test(e.key)) {} else e.preventDefault();}}  maxLength={2} />
                         </label>
                     </div>
                     <div className="payment">

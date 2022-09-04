@@ -16,8 +16,7 @@ import imgDeskNotifInActiveIcon from "../assets/img/icons/notif-regular-icon.svg
 function Layout() {
     const { id } = useParams();
     const {cardCount} = useContext(CardContext);
-    console.log(cardCount)
-    console.log(id);
+
     return (
         <>
             <header className='header'>

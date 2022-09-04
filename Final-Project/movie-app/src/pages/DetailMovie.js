@@ -12,11 +12,9 @@ import BuyNowMovie from "./BuyNow";
 
 function DetailMovie() {
     const { id } = useParams();
+    const { setCount } = useContext(CardContext);
     const [movie, setMovie] = useState([]);
     const [display, setDisplay] = useState("msg-box-hide");
-    const {cardCount, setCount} = useContext(CardContext);
-
-    console.log(cardCount);
     
     const AddItemToStorage = () => {
         if(ValidateIsThereMovie()){
@@ -82,7 +80,6 @@ function DetailMovie() {
         }
         fetchData();
     }, [id]);
-    console.log(movie);
 
     if (!document.getElementById("root")) {
         console.log("null");

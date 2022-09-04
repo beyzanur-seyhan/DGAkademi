@@ -19,6 +19,7 @@ function App() {
                 </Route>
                 <Route path='movie/popular/:id' element={<DetailMovie/>}></Route>
                 <Route path='movie/trend/:id' element={<DetailMovie/>}></Route>
+                <Route path='movie/:id' element={<DetailMovie/>}></Route>
                 <Route path='card' element={<Card/>}></Route>
               </Route>
             </Routes>

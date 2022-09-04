@@ -1,4 +1,4 @@
-import {Outlet} from 'react-router-dom';
+import { Outlet, Link } from 'react-router-dom';
 import { CardContext } from "../context/CardContext";
 import { useContext } from "react";
 import PopularContextProvider from "../context/APIPopularContext";
@@ -48,10 +48,10 @@ function Home() {
                 <aside className="card-films">
                     <header className="title">
                         <h1>Sepetteki Filmler</h1>
-                        <span className="btn-outline-gray">Devamı</span>
+                        {cardCount && cardCount.length > 4 && <Link to="/card" className="btn-outline-gray">Devamı</Link>}
                     </header>
                     <article>
-                        <CardMovies cardCount={cardCount.slice(0,4)}/>
+                        <CardMovies cardCount={cardCount && cardCount.slice(0,4)}/>
                     </article>
                 <Outlet/>
                 </aside>

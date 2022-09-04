@@ -11,14 +11,13 @@ function Cast(){
         async function fetchData() {
             const { data } = await axios.get(`${apiBaseUrl}/movie/${id}/credits?api_key=${apiKey}&language=tr`);
             setActors(data.cast.slice(0,13));
-            console.log(actors);
         }
         fetchData();
     }, [actors.length]);
 
     return(
         <>
-            { actors.length === 0 && <div>Loading...</div> }
+            { actors.length === 0 && <div>Yükleniyor...</div> }
 
             { actors.length > 0 && <div className="cast-actors">{actors.map(actor => (
                 <figure className="cast-actor" key={actor.id}>
