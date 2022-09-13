@@ -216,7 +216,7 @@ const RenderFavoriteMovies = () => {
     if(ValidateIsEmptyStored()){
         return;
     }
-
+    document.getElementById("favorite-films").innerHTML = ""
     JSON.parse(localStorage.getItem('movie')).forEach((movie, index) => {
         document.getElementById("favorite-films").innerHTML += `
                     <article class="favorite-film" id="${movie.id}">
@@ -295,11 +295,17 @@ const ValidateIsEmptyStored = () => {
     return result;
 }
 
-const RemoveMovieItem = (index, movieId) => {
+const RemoveMovieItem = (movieId) => {
 
     const storedList = JSON.parse(localStorage.getItem('movie')) || [];
-    storedList.splice(index, 1);
-    localStorage.setItem('movie', JSON.stringify(storedList));
+
+     let findMovie = storedList.filter((movie) => {
+       if(movie.id !== movieId){
+          return movie;
+       }
+    })
+
+    localStorage.setItem('movie', JSON.stringify(findMovie));
     document.getElementById(movieId).remove();
 }
 
