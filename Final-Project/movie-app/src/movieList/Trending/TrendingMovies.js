@@ -1,6 +1,6 @@
 import { useTrendingAPI } from "../../context/APITrendingContext";
-import { imageBaseUrl } from "../../APIUrl";
-import {Outlet, Link} from 'react-router-dom';
+// import { imageBaseUrl } from "../../APIUrl";
+import { Outlet, Link } from 'react-router-dom';
 import Genres from "../../components/Genres";
 import RunTime from "../../components/RunTime";
 
@@ -13,7 +13,7 @@ function TrendMovies(){
                     <article className="trend-film" key={movie.id}>
                         <figure>
                             <Link to={`movie/trend/`+ movie.id}>
-                                <img src={imageBaseUrl + movie.poster_path} alt={movie.title} />
+                                <img src={process.env.React_App_ImageBaseUrl + movie.poster_path} alt={movie.title} />
                             </Link>
                         </figure>
                         <div className="description">

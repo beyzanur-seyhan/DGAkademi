@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { CardContext } from "../../context/CardContext";
 import { useContext } from "react";
-import { imageBaseUrl } from '../../APIUrl';
+// import { imageBaseUrl } from '../../APIUrl';
 import Genres from '../../components/Genres';
 import RunTime from '../../components/RunTime';
 
@@ -22,7 +22,7 @@ function CardMovies({cardCount}) {
                 cardCount.map((movie, index) => (
                         <article className="card" key={movie.id}>
                             <figure>
-                                <Link to={`/movie/` + movie.id} style={{ backgroundImage: `url(${imageBaseUrl + movie.poster_path})` }} />
+                                <Link to={`/movie/` + movie.id} style={{ backgroundImage: `url(${process.env.React_App_ImageBaseUrl + movie.poster_path})` }} />
                             </figure>
                             <div className="description">
                                 <figcaption>

@@ -1,4 +1,4 @@
-import {Outlet} from 'react-router-dom';
+import { Outlet } from 'react-router-dom';
 import { CardContext } from "../context/CardContext";
 import { useContext } from "react";
 import CardMovies from '../movieList/Card/CardMovies';
@@ -15,8 +15,7 @@ function Card(){
         console.log("null");
      }
      else{
-         document.getElementById("root").classList.remove("container-movie");
-         
+         document.getElementById("root").classList.remove("container-movie"); 
          document.getElementById("root").removeAttribute("style");
      }
      

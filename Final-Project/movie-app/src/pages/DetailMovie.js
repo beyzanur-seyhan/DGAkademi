@@ -1,4 +1,3 @@
-import { apiBaseUrl, apiKey, imageBaseUrl } from "../APIUrl";
 import { useState, useEffect, useContext } from 'react';
 import { useParams } from 'react-router-dom';
 import { CardContext } from "../context/CardContext";
@@ -28,9 +27,9 @@ function DetailMovie() {
             title: movie.title,
             vote_average: movie.vote_average,
             genres: movie.genres,
-            runtime: movie.runtime
-            
+            runtime: movie.runtime  
         };
+        
         const storedList = JSON.parse(localStorage.getItem('movie')) || [];
         storedList.push(cardItem);
         localStorage.setItem('movie', JSON.stringify(storedList));
@@ -75,7 +74,7 @@ function DetailMovie() {
 
     useEffect(() => {
         async function fetchData() {
-            const { data } = await axios.get(`${apiBaseUrl}/movie/${id}?api_key=${apiKey}&language=tr`);
+            const { data } = await axios.get(`${process.env.React_App_ApiBaseUrl}/movie/${id}?api_key=${process.env.React_App_ApiKey}&language=tr`);
             setMovie(data);
         }
         fetchData();
@@ -86,8 +85,7 @@ function DetailMovie() {
     }
     else {
         document.getElementById("root").classList.add("container-movie");
-
-        document.getElementById("root").style.backgroundImage = `url(${movie.backdrop_path && imageBaseUrl + movie.backdrop_path})`;
+        document.getElementById("root").style.backgroundImage = `url(${movie.backdrop_path && process.env.React_App_ImageBaseUrl + movie.backdrop_path})`;
     }
     return (
         <>

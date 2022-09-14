@@ -1,4 +1,3 @@
-import { apiBaseUrl, apiKey } from "../APIUrl";
 import { useState, useEffect, createContext, useContext } from "react";
 import axios from "axios";
 
@@ -10,7 +9,7 @@ export default function APIContextProvider({children}) {
     
     useEffect(() => {
         async function fetchData() {
-            const {data} = await axios.get(apiBaseUrl + "/movie/popular?api_key=" + apiKey);
+            const {data} = await axios.get(process.env.React_App_ApiBaseUrl + "/movie/popular?api_key=" + process.env.React_App_ApiKey);
             setPopularMovie(data.results.slice(0,4));
         }
         fetchData();

@@ -15,7 +15,6 @@ function Home() {
     }
     else{
         document.getElementById("root").classList.remove("container-movie");
-        
         document.getElementById("root").removeAttribute("style");
     }
     return (
