@@ -1,5 +1,4 @@
 import { useTrendingAPI } from "../../context/APITrendingContext";
-// import { imageBaseUrl } from "../../APIUrl";
 import { Outlet, Link } from 'react-router-dom';
 import Genres from "../../components/Genres";
 import RunTime from "../../components/RunTime";

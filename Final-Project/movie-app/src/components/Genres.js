@@ -1,4 +1,3 @@
-// import { apiBaseUrl, apiKey } from "../APIUrl";
 import { useEffect, useState } from "react";
 import axios from "axios";
 

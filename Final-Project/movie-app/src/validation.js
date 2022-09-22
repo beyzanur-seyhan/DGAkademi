@@ -1,4 +1,4 @@
-import {object, string, number} from 'yup';
+import { object, string, number } from 'yup';
 
 const validation = object({
     cardNumber: number().typeError("harf içeremez!").min(19, "19 karakter olmalı!").required("gerekli!"),

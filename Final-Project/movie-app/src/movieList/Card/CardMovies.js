@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom';
 import { CardContext } from "../../context/CardContext";
 import { useContext } from "react";
-// import { imageBaseUrl } from '../../APIUrl';
 import Genres from '../../components/Genres';
 import RunTime from '../../components/RunTime';
 
