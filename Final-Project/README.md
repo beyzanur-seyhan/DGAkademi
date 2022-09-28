@@ -10,7 +10,6 @@
 
 ## Kullanılan Diller veya Teknolojiler
 
-- HTML (semantic kodlama standardı)
 - SCSS (flex ve grid yapısı)
 - REACT.JS (Localstorage, Context API, axios, react-router, UseEffect ve UseState hooks)
 
